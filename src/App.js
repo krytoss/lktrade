@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import { Flowbite } from 'flowbite-react';
 import './App.css';
+import Header from './components/Header';
+import TopBar from './components/TopBar';
+import ServicesCards from './components/fragments/ServicesCards';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Flowbite>
+      <div className="App" style={{ minHeight: '400vh' }}>
+        <TopBar />
+        <Header />
+        <div className='container mx-auto'>
+          <ServicesCards />
+        </div>
+      </div>
+    </Flowbite>
   );
 }
 
