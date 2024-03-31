@@ -12,7 +12,7 @@ const ServicesCards = () => {
         {
             title: 'Predaj a servis výpočtovej techniky',
             content: 'Ďaľší text',
-            className: 'rounded-t-none rounded-br-none p-5 text-center'
+            className: 'rounded-t-none rounded-b-none sm:rounded-br-none sm:rounded-bl-lg p-5 text-center'
         },
         {
             title: 'Tvorba SW na mieru',
@@ -22,7 +22,7 @@ const ServicesCards = () => {
         {
             title: 'Kamerové systémy',
             content: 'Ďaľší text',
-            className: 'rounded-t-none rounded-bl-none p-5 text-center'
+            className: 'rounded-t-none rounded-b-lg sm:rounded-bl-none sm:rounded-br-lg p-5 text-center'
         }
     ]
 
