@@ -6,9 +6,9 @@ const ContactForm = () => {
 
     return (
         <Form>
-            <Input className='mb-2 w-3/6' name='name' placeholder='Vaše meno' />
-            <Input className='mb-2 w-3/6' name='mail' placeholder='E-mail' />
-            <Input className='mb-2 w-3/6' name='tel' placeholder='Telefónne číslo' />
+            <Input className='mb-2 w-100 lg:w-4/6 xl:w-3/6' name='name' placeholder='Vaše meno' />
+            <Input className='mb-2 w-100 lg:w-4/6 xl:w-3/6' name='mail' placeholder='E-mail' />
+            <Input className='mb-2 w-100 lg:w-4/6 xl:w-3/6' name='tel' placeholder='Telefónne číslo' />
             <TextArea name='msg' placeholder='Vaša správa' />
         </Form>
     )
