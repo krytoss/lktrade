@@ -10,14 +10,13 @@ section {
     padding: 100px 0;
     animation: unblur ease-out;
     animation-timeline: view();
-    animation-range: entry entry 25vh;
+    transform: scale(50%);
+    filter: blur(30px);
+    animation-range: entry 20vh entry 35vh;
+    animation-fill-mode: forwards;
 }
 
 @keyframes unblur {
-    from {
-        transform: scale(50%);
-        filter: blur(10px)
-    }
     to {
         transform: scale(100%);
         filter: blur(0)
