@@ -6,7 +6,6 @@ import ServicesCards from './components/fragments/ServicesCards'
 import Contact from './components/fragments/Contact'
 
 function App() {
-  const position = {lat: 48.217882960253505, lng: 18.603501890835982};
   return (
     <Flowbite>
       <div className="App" style={{ minHeight: '400vh' }}>
