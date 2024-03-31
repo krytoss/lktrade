@@ -40,7 +40,7 @@ const TopBar = ({ active }) => {
             <NavbarCollapse>
                 { Object.keys(links).map((link, i) => {
                     const isActive = active === link
-                    return <NavbarLink key={i} className='text-white' href={link} active={ isActive }>{ links[link] }</NavbarLink>
+                    return <NavbarLink key={i} className='text-white' href={'#' + link} active={ isActive }>{ links[link] }</NavbarLink>
                 }) }
             </NavbarCollapse>
         </Navbar>

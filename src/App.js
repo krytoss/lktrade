@@ -8,7 +8,7 @@ import Contact from './components/fragments/Contact'
 function App() {
   return (
     <Flowbite>
-      <div className="App" style={{ minHeight: '400vh' }}>
+      <div id='home' className="App" style={{ minHeight: '400vh' }}>
         <TopBar />
         <Header />
         <div className='container mx-auto space-y-20'>

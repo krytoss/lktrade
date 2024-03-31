@@ -6,6 +6,24 @@
     animation-timeline: scroll();
 }
 
+section {
+    padding: 100px 0;
+    animation: unblur ease-out;
+    animation-timeline: view();
+    animation-range: entry entry 25vh;
+}
+
+@keyframes unblur {
+    from {
+        transform: scale(50%);
+        filter: blur(10px)
+    }
+    to {
+        transform: scale(100%);
+        filter: blur(0)
+    }
+}
+
 @keyframes scrolling {
     from {
         background-position: center top;

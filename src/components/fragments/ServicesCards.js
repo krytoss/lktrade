@@ -27,13 +27,13 @@ const ServicesCards = () => {
     ]
 
     return (
-        <div>
+        <section id='about'>
             <InfoCard
                 title={ mainCard.title }
                 content={ mainCard.content }
                 button={{
-                text: 'klik',
-                href: '#'
+                    text: 'klik',
+                    href: '#'
                 }}
                 className={ mainCard.className }
             />
@@ -49,7 +49,7 @@ const ServicesCards = () => {
                     })
                 }
             </div>
-          </div>
+          </section>
     )
 }
 

@@ -1,6 +1,7 @@
 const Form = ({ onSubmit, children }) => {
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
+        event.preventDefault()
         onSubmit && onSubmit()
     }
 
