@@ -27,7 +27,7 @@ const ServicesCards = () => {
     ]
 
     return (
-        <>
+        <div>
             <InfoCard
                 title={ mainCard.title }
                 content={ mainCard.content }
@@ -49,7 +49,7 @@ const ServicesCards = () => {
                     })
                 }
             </div>
-          </>
+          </div>
     )
 }
 
