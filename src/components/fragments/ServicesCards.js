@@ -5,24 +5,24 @@ const ServicesCards = () => {
     const mainCard = {
         title: 'Nejaký text',
         content: 'Ďaľší text',
-        className: 'rounded-b-none'
+        className: 'rounded-b-none p-5'
     }
 
     const smallCards = [
         {
             title: 'Predaj a servis výpočtovej techniky',
             content: 'Ďaľší text',
-            className: 'rounded-t-none rounded-br-none'
+            className: 'rounded-t-none rounded-br-none p-5 text-center'
         },
         {
             title: 'Tvorba SW na mieru',
             content: 'Ďaľší text',
-            className: 'rounded-t-none rounded-b-none'
+            className: 'rounded-t-none rounded-b-none p-5 text-center'
         },
         {
             title: 'Kamerové systémy',
             content: 'Ďaľší text',
-            className: 'rounded-t-none rounded-bl-none'
+            className: 'rounded-t-none rounded-bl-none p-5 text-center'
         }
     ]
 
