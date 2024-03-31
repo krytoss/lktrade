@@ -11,9 +11,9 @@ const Contact = () => {
     const position = {lat: 48.217882960253505, lng: 18.603501890835982};
 
     return (
-        <section>
+        <section id='contact'>
             <Card className={ "border-none bg-gray-500 bg-opacity-10" }>
-                <h2 className='text-center text-4xl text-white mb-5'>Kontaktuje nás</h2>
+                <h2 className='text-center text-4xl text-white mb-5'>Kontaktujte nás</h2>
                 <div className='grid grid-cols-1 md:grid-cols-2 w-100 lg:w-5/6 lg:mx-auto'>
                     <ul className='text-white text-xl space-y-3 mb-10 md:mb-0'>
                         <li>

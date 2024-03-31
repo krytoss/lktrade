@@ -1,9 +1,10 @@
 import { Flowbite } from 'flowbite-react'
 import './App.css'
-import Header from './components/Header'
-import TopBar from './components/TopBar'
+import Header from './components/fragments/Header'
+import TopBar from './components/fragments/TopBar'
 import ServicesCards from './components/fragments/ServicesCards'
 import Contact from './components/fragments/Contact'
+import About from './components/fragments/About'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <TopBar />
         <Header />
         <div className='container mx-auto space-y-20'>
+          <About />
           <ServicesCards />
           <Contact />
         </div>

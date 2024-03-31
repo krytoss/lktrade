@@ -2,15 +2,13 @@
     background-image: url('../public/bg_dark.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    animation: scrolling linear;
-    animation-timeline: scroll();
+    background-position: top center;
 }
 
 section {
     padding: 100px 0;
     animation: unblur ease-out;
     animation-timeline: view();
-    transform: scale(50%);
     filter: blur(30px);
     animation-range: entry 20vh entry 35vh;
     animation-fill-mode: forwards;
@@ -18,15 +16,6 @@ section {
 
 @keyframes unblur {
     to {
-        transform: scale(100%);
-        filter: blur(0)
-    }
-}
-
-@keyframes scrolling {
-    from {
-        background-position: center top;
-    } to {
-        background-position: center bottom;
+        filter: blur(0);
     }
 }
