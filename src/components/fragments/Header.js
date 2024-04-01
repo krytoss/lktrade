@@ -10,12 +10,11 @@ const Header = () => {
     useEffect(() => {
         const mottos = [
             'Otvárame dvere digitálnemu pokroku',
-            'Sme Vašim partnerom do firmy, aj do domácnosti'
+            'Sme Vašim partnerom do firmy aj do domácnosti'
         ]
 
         if (whichMotto < mottos.length) {
             if (motto.length < mottos[whichMotto].length) {
-                console.log(motto.length)
                 setTimeout(() => {
                     setMotto(mottos[whichMotto].slice(0, index))
                     setIndex(index => index + 1)

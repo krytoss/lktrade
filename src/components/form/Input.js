@@ -1,4 +1,9 @@
-const Input = ({ label, id, name, placeholder, className }) => {
+const Input = ({ label, id, name, placeholder, className, onChange }) => {
+
+    const handleChange = (event) => {
+        onChange(event)
+    }
+
     return (
         <>
             { label && <label for={id}>{label}</label>}
@@ -12,6 +17,7 @@ const Input = ({ label, id, name, placeholder, className }) => {
                     border border-gray-600 focus:border-blue-500 rounded-lg`
                     + ( className && (' ' + className))
                 }
+                onChange={ handleChange }
             />
         </>
     )
