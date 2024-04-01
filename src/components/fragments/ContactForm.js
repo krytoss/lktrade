@@ -2,7 +2,7 @@ import { Button } from "flowbite-react"
 import Form from "../form/Form"
 import Input from "../form/Input"
 import TextArea from "../form/TextArea"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import useInput from "../../hooks/useInput"
 
 const ContactForm = () => {
