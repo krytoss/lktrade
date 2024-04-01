@@ -4,6 +4,7 @@ import Input from "../form/Input"
 import TextArea from "../form/TextArea"
 import { useState } from "react"
 import useInput from "../../hooks/useInput"
+import { Spinner } from "flowbite-react"
 
 const ContactForm = () => {
 
@@ -25,15 +26,19 @@ const ContactForm = () => {
     }
 
     return (
-        <Form onSubmit={ handleSubmit }>
-            <Input className='mb-2 w-100 lg:w-4/6 xl:w-3/6' placeholder='Vaše meno' {...nameProps} />
-            <Input className='mb-2 w-100 lg:w-4/6 xl:w-3/6' name='mail' placeholder='E-mail' {...mailProps} />
-            <Input className='mb-2 w-100 lg:w-4/6 xl:w-3/6' name='tel' placeholder='Telefónne číslo' {...telProps} />
-            <TextArea name='msg' placeholder='Vaša správa' {...msgProps} />
-            <Button type='submit' className='mt-5 block w-full flex justify-center'>
-                Odoslať
-            </Button>
-        </Form>
+        sending ?
+            <div className='text-center'>
+                <Spinner aria-label="Odosiela sa" />
+            </div>
+            : <Form onSubmit={ handleSubmit }>
+                <Input className='mb-2 w-100 lg:w-4/6 xl:w-3/6' placeholder='Vaše meno' {...nameProps} />
+                <Input className='mb-2 w-100 lg:w-4/6 xl:w-3/6' name='mail' placeholder='E-mail' {...mailProps} />
+                <Input className='mb-2 w-100 lg:w-4/6 xl:w-3/6' name='tel' placeholder='Telefónne číslo' {...telProps} />
+                <TextArea name='msg' placeholder='Vaša správa' {...msgProps} />
+                <Button type='submit' className='mt-5 block w-full flex justify-center'>
+                    Odoslať
+                </Button>
+            </Form>
     )
 }
 
