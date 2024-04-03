@@ -1,6 +1,10 @@
+import { useState } from "react"
 import InfoCard from "../InfoCard"
+import Service from "../Service"
 
 const ServicesCards = () => {
+
+    const [ orientation, setOrientation ] = useState('left')
 
     const mainCard = {
         title: 'Ponúkame kompletné riešenia pre domácnosti a firmy',
@@ -22,21 +26,26 @@ const ServicesCards = () => {
         }
     }
 
-    const smallCards = [
+    const services = [
         {
-            title: 'Predaj a servis výpočtovej techniky',
+            title: 'Predaj výpočtovej techniky',
             content: 'Nájdete u nás širokú škálu výpočtovej techniky, či už novej alebo profesionálne repasovanej za tie najlepšie ceny. Príďte sa pozrieť na výber na našu predajňu!',
-            className: 'rounded-t-none rounded-b-none sm:rounded-br-none sm:rounded-bl-lg p-5 text-center'
+            img: './img/services/pc.gif'
         },
         {
-            title: 'Tvorba softwarových riešení na mieru',
-            content: 'Neváhajte sa nám ozvať s Vašim problémom, a my Vám na neho nájdeme čo najvhodnejšie riešenie!',
-            className: 'rounded-t-none rounded-b-none p-5 text-center'
+            title: 'Servis výpočtovej techniky',
+            content: 'Nájdete u nás širokú škálu výpočtovej techniky, či už novej alebo profesionálne repasovanej za tie najlepšie ceny. Príďte sa pozrieť na výber na našu predajňu!',
+            img: './img/services/repair.gif'
         },
         {
             title: 'Kamerové systémy',
             content: '',
-            className: 'rounded-t-none rounded-b-lg sm:rounded-bl-none sm:rounded-br-lg p-5 text-center'
+            img: './img/services/cam.gif'
+        },
+        {
+            title: 'Tvorba webových prezentácií a kompletných riešení pre firmy',
+            content: 'Začínate podnikať a nemáte sa ako prezentovať na internete? Alebo Vám príde Vaša stránka príliš stará, nemoderná, a máte pocit že Vás to už neodzrkadluje? Neváhajte sa nám ozvať, a my Vám nájdeme čo najvhodnejšie riešenie!',
+            img: './img/services/code.gif'
         }
     ]
 
@@ -45,21 +54,15 @@ const ServicesCards = () => {
             <InfoCard
                 title={ mainCard.title }
                 button={ mainCard.button }
-                className={ mainCard.className }
+                className={ mainCard.className + ' mb-5' }
             >
                 { mainCard.content }
             </InfoCard>
-            <div className='grid grid-cols-1 sm:grid-cols-3'>
-                {
-                    smallCards.map((card, i) => {
-                        return <InfoCard
-                            key={ i }
-                            title={ card.title }
-                            className={ card.className }
-                        >{ card.content }</InfoCard>
-                    })
-                }
-            </div>
+            {
+                services.map((s, i) => {
+                    return <Service key={i} order={i} title={s.title} text={s.content} img={s.img}/>
+                })
+            }
           </section>
     )
 }

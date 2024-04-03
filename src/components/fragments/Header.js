@@ -41,7 +41,7 @@ const Header = () => {
                         sm:text-6xl lg:text-8xl text-zinc-300'>
                     { motto } <span className='horizontal-line' />
                 </h2>
-                <img className="header-right hidden sm:block h-4/5" src='./img/mismas.png' alt='Pomáhame spájať svet' />
+                <img className="header-right hidden sm:block mh-4/5" src='./img/mismas.png' alt='Pomáhame spájať svet' />
             </div>
         </header>
     )

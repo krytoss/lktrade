@@ -1,3 +1,7 @@
+header {
+    height: calc(100vh - 60px);
+}
+
 .header-left {
     animation: headerLeft linear;
     animation-timeline: scroll();

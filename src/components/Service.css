@@ -1,0 +1,32 @@
+.service {
+    overflow: hidden;
+    background: rgb(195,195,195);
+    position: relative;
+    filter: blur(30px);
+    animation: animLeft ease-out;
+    animation-fill-mode: forwards;
+    animation-timeline: view();
+    animation-range: entry 5vh entry 20vh;
+}
+
+.service img {
+    max-height: 150px;
+    width: auto;
+}
+
+.service.left {
+    left: -200px;
+    background: linear-gradient(90deg, rgba(107,114,128,0.2) 0%, rgba(254,255,255,0) 80%);
+}
+
+.service.right {
+    left: 200px;
+    background: linear-gradient(90deg, rgba(254,255,255,0) 20%, rgba(107,114,128,0.2) 100%);
+}
+
+@keyframes animLeft {
+    to {
+        filter: blur(0);
+        left: 0;
+    }
+}
