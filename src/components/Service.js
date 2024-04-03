@@ -14,7 +14,7 @@ const Service = ({ order, img, title, text, className }) => {
 
     useEffect(() => {
         setOrientation(order % 2 === 0 ? 'left' : 'right')
-    }, [])
+    }, [ order ])
 
     return (
         <div
@@ -24,7 +24,7 @@ const Service = ({ order, img, title, text, className }) => {
             }
         >
             <div className={ `flex px-2 justify-items-center ${imgClasses}` }>
-                <img src={ img }/>
+                <img src={ img } alt={title}/>
             </div>
             <div>
                 <h2 className='text-xl'>{ title }</h2>

@@ -1,10 +1,7 @@
-import { useState } from "react"
 import InfoCard from "../InfoCard"
 import Service from "../Service"
 
 const ServicesCards = () => {
-
-    const [ orientation, setOrientation ] = useState('left')
 
     const mainCard = {
         title: 'Ponúkame kompletné riešenia pre domácnosti a firmy',
