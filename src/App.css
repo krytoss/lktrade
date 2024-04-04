@@ -4,18 +4,3 @@
     background-attachment: fixed;
     background-position: top center;
 }
-
-section {
-    padding: 100px 0;
-    animation: unblur ease-out;
-    animation-timeline: view();
-    filter: blur(30px);
-    animation-range: entry 20vh entry 35vh;
-    animation-fill-mode: forwards;
-}
-
-@keyframes unblur {
-    to {
-        filter: blur(0);
-    }
-}

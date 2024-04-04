@@ -38,19 +38,6 @@ header {
     }
 }
 
-@keyframes headerLeft {
-    0% {
-        transform: translateX(none) scale(100%);
-        opacity: 1;
-    }
-    30% {
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(-100px) scale(250%);
-    }
-}
-
 @keyframes headerRight {
     0% {
         transform: translateX(none) scale(100%);

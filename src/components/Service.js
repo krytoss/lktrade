@@ -1,5 +1,6 @@
 import './Service.css'
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 
 const Service = ({ order, img, title, text, className }) => {
 
@@ -17,11 +18,25 @@ const Service = ({ order, img, title, text, className }) => {
     }, [ order ])
 
     return (
-        <div
+        <motion.div
             className={
                 `service text-white px-20 py-5 grid grid-cols-1 sm:grid-cols-2 rounded-full ${orientation} ${classes}`
                 + (className ? ' ' + className : '')
             }
+            initial={{
+                filter: 'blur(30px)',
+                left: orientation === 'left' ? '-200px' : '200px'
+            }}
+            whileInView={{
+                filter: 'blur(0)',
+                left: 0
+            }}
+            viewport={{
+                margin: '-100px'
+            }}
+            transition={{
+                duration: .5
+            }}
         >
             <div className={ `flex px-2 justify-items-center ${imgClasses}` }>
                 <img src={ img } alt={title}/>
@@ -32,7 +47,7 @@ const Service = ({ order, img, title, text, className }) => {
                     {text}
                 </p>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

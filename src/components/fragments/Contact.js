@@ -5,13 +5,14 @@ import { Marker } from "@vis.gl/react-google-maps"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faAt, faMapPin } from "@fortawesome/free-solid-svg-icons"
 import ContactForm from "./ContactForm"
+import Section from "../Section"
 
 const Contact = () => {
 
     const position = {lat: 48.217882960253505, lng: 18.603501890835982};
 
     return (
-        <section id='contact'>
+        <Section id='contact'>
             <Card className={ "border-none bg-gray-500 bg-opacity-10" }>
                 <h2 className='text-center text-4xl text-white mb-5'>Kontaktujte nás</h2>
                 <div className='grid grid-cols-1 md:grid-cols-2 w-100 lg:w-5/6 lg:mx-auto'>
@@ -47,7 +48,7 @@ const Contact = () => {
                     </APIProvider>
                 </div>
             </Card>
-        </section>
+        </Section>
     )
 }
 

@@ -1,0 +1,9 @@
+section {
+    margin: 100px 0;
+}
+
+@keyframes unblur {
+    to {
+        filter: blur(0);
+    }
+}

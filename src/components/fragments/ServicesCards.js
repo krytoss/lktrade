@@ -1,4 +1,5 @@
 import InfoCard from "../InfoCard"
+import Section from "../Section"
 import Service from "../Service"
 
 const ServicesCards = () => {
@@ -47,7 +48,7 @@ const ServicesCards = () => {
     ]
 
     return (
-        <section id='services'>
+        <Section id='services'>
             <InfoCard
                 title={ mainCard.title }
                 button={ mainCard.button }
@@ -60,7 +61,7 @@ const ServicesCards = () => {
                     return <Service key={i} order={i} title={s.title} text={s.content} img={s.img}/>
                 })
             }
-          </section>
+          </Section>
     )
 }
 
