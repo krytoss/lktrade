@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/lktrade/static/css/main.bf328acb.css",
-    "main.js": "/lktrade/static/js/main.94029e17.js",
+    "main.css": "/lktrade/static/css/main.32a70327.css",
+    "main.js": "/lktrade/static/js/main.16e993b6.js",
     "static/media/bg_dark.png": "/lktrade/static/media/bg_dark.cf93352d1dc8b508bc48.png",
     "index.html": "/lktrade/index.html",
-    "main.bf328acb.css.map": "/lktrade/static/css/main.bf328acb.css.map",
-    "main.94029e17.js.map": "/lktrade/static/js/main.94029e17.js.map"
+    "main.32a70327.css.map": "/lktrade/static/css/main.32a70327.css.map",
+    "main.16e993b6.js.map": "/lktrade/static/js/main.16e993b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf328acb.css",
-    "static/js/main.94029e17.js"
+    "static/css/main.32a70327.css",
+    "static/js/main.16e993b6.js"
   ]
 }
