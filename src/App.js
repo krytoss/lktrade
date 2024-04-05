@@ -9,6 +9,7 @@ import About from './components/fragments/About'
 function App() {
   return (
     <Flowbite>
+      <div className='fixed-bg'></div>
       <div id='home' className="App" style={{ minHeight: '400vh' }}>
         <TopBar />
         <Header />
