@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 html {
-  scroll-behavior: smooth;
+
 }
 
 body {
@@ -14,6 +14,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 code {
