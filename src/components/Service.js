@@ -8,7 +8,7 @@ const Service = ({ order, img, title, text, className }) => {
 
     const classes =
         orientation === 'left'
-            ? 'rounded-tr-none rounded-br-none text-left'
+            ? 'rounded-tr-none rounded-br-none text-left bg-white'
             : 'rounded-tl-none rounded-bl-none text-right'
 
     const imgClasses = orientation === 'left' ? 'order-0 justify-start' : 'order-1 justify-end'
@@ -20,7 +20,7 @@ const Service = ({ order, img, title, text, className }) => {
     return (
         <motion.div
             className={
-                `service text-white px-20 py-5 grid grid-cols-1 sm:grid-cols-2 rounded-full ${orientation} ${classes}`
+                `service text-white px-20 py-5 grid grid-cols-1 sm:grid-cols-2  ${orientation} ${classes}`
                 + (className ? ' ' + className : '')
             }
             initial={{

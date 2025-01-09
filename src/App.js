@@ -13,7 +13,7 @@ function App() {
       <div id='home' className="App" style={{ minHeight: '400vh' }}>
         <TopBar />
         <Header />
-        <div className='container mx-auto space-y-20'>
+        <div className=''>
           <About />
           <ServicesCards />
           <Contact />
