@@ -36,7 +36,6 @@ const Header = () => {
     return (
         <header className="flex align-middle py-10 sm:py-20 lg:py-5 snap-start">
             <div className='container mx-auto grid grid-cols-1 flex items-center justify-items-center'>
-                <img src='./logo_transparent_without_text.png' className="h-40" alt="Flowbite React Logo" />
                 <h2
                     className='header-left text-center text-7xl
                         sm:text-6xl lg:text-6xl text-zinc-300 min-h-20'>
