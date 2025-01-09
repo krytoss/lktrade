@@ -1,4 +1,3 @@
-import InfoCard from "../InfoCard"
 import Section from "../Section"
 import Service from "../Service"
 
